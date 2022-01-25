@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appPP.views.Evaluaciones"
+             Title="Evaluaciones">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <ScrollView>
+
+                <StackLayout Margin="10">
+                
+                    <ListView RefreshControlColor="OrangeRed"    
+                              RowHeight="250"  x:Name="listaCorredores" ItemsSource="{Binding Evaluacion}"  >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame HeightRequest="50" CornerRadius="2">
+                                        <StackLayout  Margin="0" Orientation="Horizontal">
+
+
+                                            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Margin="10" Orientation="Vertical">
+                                                <Label TextColor="OrangeRed"  Text="&#xe566;" FontSize="40" FontFamily="Material/Sharp"></Label>
+
+
+                                            </StackLayout>
+                                            <StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical">
+
+                                                <Label Margin="10" TextColor="OrangeRed" FontAttributes="Bold" Text="{Binding carrera}"></Label>
+
+                                                <Label TextColor="Gray" FontAttributes="Bold" >
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Parcial I: "></Span>
+                                                            <Span Text="{Binding parcial1}"></Span>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <Label TextColor="Gray"  >
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Parcial II: "></Span>
+                                                            <Span Text="{Binding parcial2}"></Span>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <Label  TextColor="Gray" >
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Parcial III: "></Span>
+                                                            <Span Text="{Binding parcial3}"></Span>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <Label  TextColor="Gray" >
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Parcial IV: "></Span>
+                                                            <Span Text="{Binding parcial4}"></Span>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                              
+
+                                            </StackLayout>
+
+
+                                        </StackLayout>
+
+                                    </Frame>
+
+                                </ViewCell>
+
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

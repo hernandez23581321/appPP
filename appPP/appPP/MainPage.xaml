@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+              
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design" NavigationPage.HasNavigationBar="False"
+             x:Class="appPP.MainPage">
+
+    <StackLayout>
+     
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout>
+                        <Frame Margin="20" HasShadow="False" HeightRequest="60" CornerRadius="5">
+                            <Grid>
+                                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+
+                                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+
+                                        <Label TextColor="Black"  Text="Inicio de Sesion" FontAttributes="Bold"  FontSize="20" HorizontalTextAlignment="Center" >
+
+                                        </Label>
+                                    </StackLayout>
+                                
+
+                                </StackLayout>
+
+                            </Grid>
+
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame HasShadow="False" Margin="10" CornerRadius="10">
+                            <Grid>
+                                <StackLayout Orientation="Vertical">
+
+                                    <StackLayout Margin="10,10,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                                        <StackLayout Orientation="Vertical" Padding="10">
+                                        <Label FontAttributes="Bold" FontSize="17" Text="Usuario">
+
+                                        </Label>
+                                        <Entry  BackgroundColor="white" TextColor="Black" 
+                                                   Keyboard="Text" Visual="Material" x:Name="usuario"
+                                                   FontSize="17" HorizontalOptions="FillAndExpand" >
+                                            </Entry>
+                                        </StackLayout>
+
+                                    </StackLayout>
+
+                                <StackLayout Margin="10,10,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                                        <StackLayout Orientation="Vertical" Padding="10">
+                                        <Label FontAttributes="Bold" FontSize="17" Text="Password">
+
+                                        </Label>
+                                        <Entry  BackgroundColor="white" TextColor="Black"  
+                                                   Keyboard="Text" IsPassword="True" Visual="Material" x:Name="password" FontSize="17" HorizontalOptions="FillAndExpand" >
+                                            </Entry>
+                                        </StackLayout>
+
+                                    </StackLayout>
+
+
+                                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                                        <StackLayout   HorizontalOptions="CenterAndExpand">
+                                            <ActivityIndicator
+                                           IsRunning="False"
+                                                x:Name="indicador"
+                                           IsVisible="False"
+                                           Color="SeaGreen"
+
+                                         />
+                                        </StackLayout>
+
+                                        <StackLayout Margin="30"  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                                        <Button BackgroundColor="White" HorizontalOptions="FillAndExpand" BorderColor="Black" BorderWidth="2" Visual="Material" Clicked="IniciarSesion" Text="Iniciar Sesion"></Button>
+                                           
+                                          
+
+                                        </StackLayout>
+
+                                    </StackLayout>
+
+
+
+                                </StackLayout>
+
+                            </Grid>
+
+                        </Frame>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+
+
+
+            </ScrollView>
+      
+
+    </StackLayout>
+
+</ContentPage>

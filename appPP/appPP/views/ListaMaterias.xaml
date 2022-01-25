@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appPP.views.ListaMaterias">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Frame HasShadow="False" Margin="20" CornerRadius="10">
+                        <Grid>
+                            <StackLayout Orientation="Vertical">
+                      
+
+                                <Label TextColor="black" x:Name="nombre"  Text="Materias Cursando"  Margin="10"  FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center">
+
+                                </Label>
+
+
+
+
+
+                            </StackLayout>
+
+                        </Grid>
+
+                    </Frame>
+                    <Frame HasShadow="False" VerticalOptions="CenterAndExpand"  Margin="20,10,20,0" CornerRadius="10">
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer  >
+
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                            <Label HorizontalOptions="StartAndExpand"  TextColor="Black"    FontAttributes="Bold" Text="Matematicas">
+
+                            </Label>
+
+                        </StackLayout>
+                    </Frame>
+                    <Frame HasShadow="False" VerticalOptions="CenterAndExpand"  Margin="20,10,20,0" CornerRadius="10">
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer  >
+
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                            <Label HorizontalOptions="StartAndExpand"  TextColor="Black"    FontAttributes="Bold" Text="Matematicas">
+
+                            </Label>
+
+                        </StackLayout>
+                    </Frame>
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

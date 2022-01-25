@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "cSdPgEOQFDN+m11RhZfjJJym9BuSw6lHlueEBa1/7JNoYdNy3+CnLeMKo5PBfHNBCbiyiW08OY4vovB3hJM96A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP Envy\\source\\repos\\appPP\\appPP\\appPP\\appPP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP Envy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\HP Envy\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\HP Envy\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\HP Envy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\HP Envy\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\HP Envy\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

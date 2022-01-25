@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="appPP.views.NuevaMatricula"
+             Title="Registro de Matricula"
+          >
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+             
+                <Grid RowSpacing="{OnPlatform iOS=25,Android=20}">
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!--1-->
+                        <RowDefinition Height="Auto"/>
+                        <!--2-->
+                        <RowDefinition Height="Auto"/>
+                        <!--3-->
+                        <RowDefinition Height="Auto"/>
+                        <!--4-->
+                        <RowDefinition Height="Auto"/>
+                        <!--5-->
+                        <RowDefinition Height="Auto"/>
+                        <!--6-->
+                        <RowDefinition Height="Auto"/>
+                        <!--7-->
+                        <RowDefinition Height="Auto"/>
+                        
+                        <RowDefinition Height="Auto"/>
+                        <!--4-->
+                        <RowDefinition Height="Auto"/>
+                        <!--5-->
+                        <RowDefinition Height="Auto"/>
+                        <!--6-->
+                        <RowDefinition Height="Auto"/>
+                        <!--7-->
+                        <RowDefinition Height="Auto"/>
+                        <!--8-->
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+
+                   
+               
+
+
+                    <StackLayout Grid.Row="1" >
+                        <Frame  Margin="10">
+                            <StackLayout>
+                                <StackLayout HorizontalOptions="Center" WidthRequest="{OnPlatform iOS=300,Android=300}" Orientation="Vertical"  >
+
+
+                                    <Entry
+                                    Placeholder="Identidad"
+                                    Visual="Material"
+                                    Keyboard="Text"
+                                    MaxLength="50"
+                                    FontSize="{OnPlatform Android=15,iOS=16}"
+                                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                                    IsEnabled="{Binding IsEnabledTxt}"
+                                    />
+
+                                                </StackLayout>
+
+                                <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+
+
+
+
+
+                                    <Entry
+                                        Placeholder="Nombre"
+                                        Visual="Material"
+                                        MaxLength="25"
+                   
+                                        FontSize="{OnPlatform Android=15,iOS=16}"
+                                        Text="{Binding PasswordTxt, Mode=TwoWay}"
+                                        IsEnabled="{Binding IsEnabledTxt}"
+                                        />
+
+
+
+                                </StackLayout>
+
+                                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+
+
+
+
+                                    <Entry
+                                        Placeholder="Apellido"
+                                        Visual="Material"
+                                        MaxLength="200"
+                                        Keyboard="Text"
+                                        FontSize="{OnPlatform Android=15,iOS=16}"
+                                        Text="{Binding NameTxt, Mode=TwoWay}"
+                                        IsEnabled="{Binding IsEnabledTxt}"
+                                        />
+
+
+                                </StackLayout>
+                                <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                                    <StackLayout WidthRequest="300">
+
+
+
+
+
+                                        <Entry
+                                                Placeholder="Direccion"
+                                                MaxLength="25"
+                                                Visual="Material"
+             
+                                                FontSize="{OnPlatform Android=15,iOS=16}"
+                                                Keyboard="Text"
+                                                Text="{Binding conPasswordTxt, Mode=TwoWay}"
+                                                IsEnabled="{Binding IsEnabledTxt}"
+                                                />
+
+
+                                                                </StackLayout>
+
+                                                            </StackLayout>
+
+                                                            <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                                                                <StackLayout WidthRequest="300">
+
+
+
+
+
+                                                                    <Entry
+                                                Placeholder="Correo"
+                                                MaxLength="25"
+                                                Visual="Material"
+                                                FontSize="{OnPlatform Android=15,iOS=16}"
+                                                Keyboard="Email"
+                                                Text="{Binding conPasswordTxt, Mode=TwoWay}"
+                                                IsEnabled="{Binding IsEnabledTxt}"
+                                                />
+
+
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <StackLayout BackgroundColor="White" Grid.Row="6" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                                    <StackLayout BackgroundColor="White" WidthRequest="300">
+
+
+                                        <Frame
+                                   BackgroundColor="White" 
+                                 BorderColor="#D40015"   
+                                 HasShadow="{OnPlatform Android=true,iOS=false}"
+                                 Padding="{OnPlatform Android=6,iOS=0}"
+                                 CornerRadius="{OnPlatform Android=7}"
+                                 >
+
+                                            <StackLayout >
+                                                <Label   BackgroundColor="White" TextColor="Black" Text="Seleccione Grado"></Label>
+                                                <Picker SelectedItem="{Binding paisSeleccionado}"  BackgroundColor="white" 
+                                                 TextColor="White" Visual="Material"   x:Name="pickerRegion" ></Picker>
+
+                                            </StackLayout>
+
+                                        </Frame>
+                                    </StackLayout>
+
+
+
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Row="2" >
+                        <Frame Margin="10">
+                            <StackLayout>
+                                <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                                    <StackLayout WidthRequest="300">
+
+                                        <Entry
+                                        Placeholder="Identidad Padre"
+                                        MaxLength="25"
+                                        Visual="Material"
+                  
+                                        FontSize="{OnPlatform Android=15,iOS=16}"
+                                        Keyboard="Email"
+                                        Text="{Binding conPasswordTxt, Mode=TwoWay}"
+                                        IsEnabled="{Binding IsEnabledTxt}"
+                                        />  
+
+
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <StackLayout Grid.Row="8" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                                    <StackLayout WidthRequest="300">
+
+
+
+
+
+                                        <Entry
+                                            Placeholder="Nombre Padre"
+                                            MaxLength="200"
+                                            Visual="Material"  
+                                            FontSize="{OnPlatform Android=15,iOS=16}"
+                                            Keyboard="Email"
+                                            Text="{Binding conPasswordTxt, Mode=TwoWay}"
+                                            IsEnabled="{Binding IsEnabledTxt}"
+                                            />
+
+
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <StackLayout Grid.Row="9" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                                    <StackLayout WidthRequest="300">
+
+
+
+
+
+                                        <Entry
+                                        Placeholder="Apellido Padre"
+                                        MaxLength="200"
+                                        Visual="Material"
+                  
+                                        FontSize="{OnPlatform Android=15,iOS=16}"
+                                        Keyboard="Email"
+                                        Text="{Binding conPasswordTxt, Mode=TwoWay}"
+                                        IsEnabled="{Binding IsEnabledTxt}"
+                                        />          
+
+
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <StackLayout Grid.Row="10" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                                    <StackLayout WidthRequest="300">
+
+
+
+                                        <Entry
+                                        Placeholder="Direccion"
+                                        MaxLength="205"
+                                        Visual="Material"
+                 
+                                        FontSize="{OnPlatform Android=15,iOS=16}"
+                                        Keyboard="Email"
+                                        Text="{Binding conPasswordTxt, Mode=TwoWay}"
+                                        IsEnabled="{Binding IsEnabledTxt}"
+                                        />      
+
+
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+
+                    
+                   
+
+                    <StackLayout Grid.Row="3" HorizontalOptions="Center" Orientation="Vertical" >
+                        <Button  Margin="20"
+                     Text="Register"
+                            TextColor="Black"
+                           
+                            FontSize="{OnPlatform Android=15}"
+                            BackgroundColor="#fcfcfc"
+                            BorderColor="Black"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            CornerRadius="7"
+                            Command="{Binding RegisterCommand}"
+                            IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"
+                    />
+                     
+
+                    </StackLayout>
+
+
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
